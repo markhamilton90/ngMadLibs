@@ -467,6 +467,7 @@ input {
   text-align: center;
 }
 
+/*
 ::-webkit-input-placeholder {
   color: black;
 }
@@ -482,6 +483,7 @@ input {
 :-ms-input-placeholder {
   color: black;
 }
+*/
 
 
 .images {
