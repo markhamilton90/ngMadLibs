@@ -460,11 +460,17 @@ li {
 
 span {
   border-bottom: 2px solid black;
+  display: inline-block;
+  min-width: 30px;
 }
 
 input {
   border: 3px solid black;
   text-align: center;
+}
+
+input[type="radio"] {
+
 }
 
 /*
@@ -549,6 +555,13 @@ input {
 .container p {
   line-height: 2rem;
   font-size: 1.15rem
+}
+
+.gender-controls {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  margin-bottom: -18px;
 }
 
 
