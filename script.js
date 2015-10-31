@@ -1,5 +1,5 @@
 
-angular.module('madLibs', []) // new module without dependencies
+angular.module('madLibs', ['ngMessages']) // new module with one dependency
 	.controller('GameCtrl', function($scope){
 		$scope.person = 'Name';
 		$scope.job = 'job title';
@@ -11,4 +11,6 @@ angular.module('madLibs', []) // new module without dependencies
 		$scope.obnoxious = 'obnoxious celebrity';
 		$scope.number = 'big number';
 		$scope.gender = 'female';
+
+		
 	})

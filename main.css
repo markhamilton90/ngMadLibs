@@ -464,13 +464,22 @@ span {
   min-width: 30px;
 }
 
+hr {
+  color: black;
+  background-color: black;
+  height: 1px;
+  margin-top: 10px;
+}
+
 input {
   border: 3px solid black;
   text-align: center;
 }
 
-input[type="radio"] {
-
+input[type="submit"] {
+  position: relative;
+  top: 18px;
+  box-shadow: 2px 2px black;
 }
 
 /*
@@ -529,19 +538,24 @@ input[type="radio"] {
   height: 3rem;
 }
 
-
-.inputs,
-.paragraph {
+.inputs {
+  border-bottom: 2px solid black;
   padding: 2rem 0 4rem;
 }
 
-.inputs {
-  border-bottom: 2px solid black;
+.paragraph {
+  padding: 2rem 0 3rem;
 }
 
 .container {
   width: 85%;
   margin: 0 auto;
+}
+
+.container2 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: right;
 }
 
 .container h2 {
