@@ -1,14 +1,14 @@
 
 angular.module('madLibs', []) 
 	.controller('GameCtrl', function($scope){
-		$scope.person = 'Name';
-		$scope.job = 'job title';
-		$scope.tedious = 'tedious task';
-		$scope.dirty = 'dirty task';
-		$scope.celebrity = 'celebrity';
-		$scope.useless = 'useless skill';
-		$scope.adjective = 'adjective';
-		$scope.obnoxious = 'obnoxious celebrity';
+		$scope.person;
+		$scope.job;
+		$scope.tedious;
+		$scope.dirty;
+		$scope.celebrity;
+		$scope.useless;
+		$scope.adjective;
+		$scope.obnoxious;
 		$scope.number;
 		$scope.showView = true;
 

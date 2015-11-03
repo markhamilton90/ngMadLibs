@@ -459,13 +459,6 @@ li {
   vertical-align: top;
 }
 
-span {
-  border-bottom: 2px solid black;
-  display: inline-block;
-  text-align: center;
-  min-width: 30px;
-}
-
 hr {
   color: black;
   background-color: black;
@@ -478,9 +471,9 @@ input {
   text-align: center;
 }
 
-input[type="submit"] {
-  position: relative;
-  top: 18px;
+input[type="submit"],
+input[type="button"] {
+  margin-top: 18px;
   box-shadow: 2px 2px black;
 }
 
@@ -558,6 +551,13 @@ input[type="submit"] {
 
 .paragraph {
   padding: 2rem 0 3rem;
+}
+
+.paragraph span {
+  border-bottom: 2px solid black;
+  display: inline-block;
+  text-align: center;
+  min-width: 30px;
 }
 
 .container {
