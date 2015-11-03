@@ -1,15 +1,19 @@
 
 angular.module('madLibs', []) 
 	.controller('GameCtrl', function($scope){
-		$scope.person;
-		$scope.job;
-		$scope.tedious;
-		$scope.dirty;
-		$scope.celebrity;
-		$scope.useless;
-		$scope.adjective;
-		$scope.obnoxious;
-		$scope.number;
+
+		$scope.madLibs = {
+			person: "",
+			job: "",
+			tedious: "",
+			dirty: "",
+			celebrity: "",
+			useless: "",
+			adjective: "",
+			obnoxious: "",
+			number: ""
+		}
+
 		$scope.showView = true;
 
 		$scope.submit = function() {
@@ -22,16 +26,9 @@ angular.module('madLibs', [])
 		$scope.reset = function() {
 			if ($scope.showView == false) {
 				$scope.showView = true;
-				console.log($scope.showView);
+				for (var input in $scope.madLibs) {
+					$scope.madLibs[input] = "";
+				}	
 			}
-			$scope.person = "";
-			$scope.job = "";
-			$scope.tedious = "";
-			$scope.dirty = "";
-			$scope.celebrity = "";
-			$scope.useless = "";
-			$scope.adjective = "";
-			$scope.obnoxious = "";
-			$scope.number = "";
 		}
 	})

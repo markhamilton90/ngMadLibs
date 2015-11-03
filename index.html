@@ -25,39 +25,39 @@
 				<h2>Provide the following words:</h2>
 				<ul>
 					<li>
-						<input type="text" placeholder="Name" ng-model="person" name="person" required>
+						<input type="text" placeholder="Name" ng-model="madLibs.person" name="person" required>
 						<span ng-if="myForm.$submitted && myForm.person.$error.required">*Please input this field</span>
 					</li>
 					<li>
-						<input type="text" placeholder="job title" ng-model="job" name="job" required>
+						<input type="text" placeholder="job title" ng-model="madLibs.job" name="job" required>
 						<span ng-if="myForm.$submitted && myForm.job.$error.required">*Please input this field</span>
 					</li>
 					<li>
-						<input type="text" placeholder="tedious task" ng-model="tedious" name="tedious" required>
+						<input type="text" placeholder="tedious task" ng-model="madLibs.tedious" name="tedious" required>
 						<span ng-if="myForm.$submitted && myForm.tedious.$error.required">*Please input this field</span>
 					</li>
 					<li>
-						<input type="text" placeholder="dirty task" ng-model="dirty" name="dirty" required>
+						<input type="text" placeholder="dirty task" ng-model="madLibs.dirty" name="dirty" required>
 						<span ng-if="myForm.$submitted && myForm.dirty.$error.required">*Please input this field</span>
 					</li>
 					<li>
-						<input type="text" placeholder="celebrity" ng-model="celebrity" name="celebrity" required>
+						<input type="text" placeholder="celebrity" ng-model="madLibs.celebrity" name="celebrity" required>
 						<span ng-if="myForm.$submitted && myForm.celebrity.$error.required">*Please input this field</span>
 					</li>
 					<li>
-						<input type="text" placeholder="useless skill" ng-model="useless" name="useless" required>
+						<input type="text" placeholder="useless skill" ng-model="madLibs.useless" name="useless" required>
 						<span ng-if="myForm.$submitted && myForm.useless.$error.required">*Please input this field</span>
 					</li>
 					<li>
-						<input type="text" placeholder="adjective" ng-model="adjective" name="adjective" required>
+						<input type="text" placeholder="adjective" ng-model="madLibs.adjective" name="adjective" required>
 						<span ng-if="myForm.$submitted && myForm.adjective.$error.required">*Please input this field</span>
 					</li>
 					<li>
-						<input type="text" placeholder="obnoxious celebrity" ng-model="obnoxious" name="obnoxious" required>
+						<input type="text" placeholder="obnoxious celebrity" ng-model="madLibs.obnoxious" name="obnoxious" required>
 						<span ng-if="myForm.$submitted && myForm.obnoxious.$error.required">*Please input this field</span>
 					</li>
 					<li>
-						<input type="number" placeholder="huge number" ng-model="number" name="number" required>
+						<input type="number" placeholder="huge number" ng-model="madLibs.number" name="number" required>
 						<span ng-if="myForm.$submitted && myForm.number.$error.required">*Please input this field</span>
 					</li>
 				</ul>
@@ -71,9 +71,9 @@
 
 	<section class="paragraph" ng-show="!showView">
 		<div class="container">
-			<p><span>{{person}}</span> was a <span>{{job}}</span> who loved technology. Although he/she loved parts of his/her job, he/she absolutely hated  <span>{{tedious}}</span> and <span>{{dirty}}</span>. So, <span>{{person}}</span> met with his/her life mentor <span>{{celebrity}}</span> who told him/her to learn <span>{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{useless}}</span> so he/she studied programming instead.<br><br>
+			<p><span>{{madLibs.person}}</span> was a <span>{{madLibs.job}}</span> who loved technology. Although he/she loved parts of his/her job, he/she absolutely hated  <span>{{madLibs.tedious}}</span> and <span>{{madLibs.dirty}}</span>. So, <span>{{madLibs.person}}</span> met with his/her life mentor <span>{{madLibs.celebrity}}</span> who told him/her to learn <span>{{madLibs.useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{madLibs.useless}}</span> so he/she studied programming instead.<br><br>
 
-			What a great decision! With his/her new skills, <span>{{person}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxious}}</span> that not only loved <span>{{dirty}}</span> but did it <span>{{number}}</span> times faster.</p> 
+			What a great decision! With his/her new skills, <span>{{madLibs.person}}</span> built a(n) <span>{{madLibs.adjective}}</span> robot named <span>{{madLibs.obnoxious}}</span> that not only loved <span>{{madLibs.dirty}}</span> but did it <span>{{madLibs.number}}</span> times faster.</p> 
 		</div>
 		<div class="btn-container">
 			<input type="button" value="Start Over" ng-click="reset()">
