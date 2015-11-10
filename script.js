@@ -1,5 +1,5 @@
 
-angular.module('madLibs', []) 
+angular.module('madLibs', ['ngAnimate']) 
 	.controller('GameCtrl', function($scope){
 
 		$scope.madLibs = {
@@ -19,7 +19,6 @@ angular.module('madLibs', [])
 		$scope.submit = function() {
 			if ($scope.myForm.$valid) {
 				$scope.showView = false;
-				console.log($scope.showView);
 			}
 		}
 

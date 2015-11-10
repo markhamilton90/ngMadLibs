@@ -592,6 +592,21 @@ input[type="button"] {
 }
 
 
+.inputs.ng-hide-remove,
+.paragraph.ng-hide-remove {
+  opacity: 0;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+.inputs.ng-hide-remove-active,
+.paragraph.ng-hide-remove-active {
+  opacity: 1;
+} 
+
+
 
 
 
