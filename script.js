@@ -19,6 +19,7 @@ angular.module('madLibs', ['ngAnimate'])
 		$scope.submit = function() {
 			if ($scope.myForm.$valid) {
 				$scope.showView = false;
+				console.log($scope.showView);
 			}
 		}
 

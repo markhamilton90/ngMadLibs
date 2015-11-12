@@ -477,23 +477,9 @@ input[type="button"] {
   box-shadow: 2px 2px black;
 }
 
-/*
-::-webkit-input-placeholder {
-  color: black;
+span {
+  display: inline-block;
 }
-
-:-moz-placeholder {
-  color: black;
-}
-
-::-moz-placeholder {
-  color: black;
-}
-
-:-ms-input-placeholder {
-  color: black;
-}
-*/
 
 
 .images {
@@ -557,7 +543,9 @@ input[type="button"] {
   border-bottom: 2px solid black;
   display: inline-block;
   text-align: center;
-  min-width: 30px;
+  font-size: 1.16rem;
+  color: red;
+  min-width: 60px;
 }
 
 .container {
@@ -595,16 +583,38 @@ input[type="button"] {
 .inputs.ng-hide-remove,
 .paragraph.ng-hide-remove {
   opacity: 0;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -o-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 4s;
+  -moz-transition: 4s;
+  -o-transition: 4s;
+  transition: 4s;
 }
 
 .inputs.ng-hide-remove-active,
 .paragraph.ng-hide-remove-active {
   opacity: 1;
-} 
+}
+
+/* future css transition?
+
+.container span {
+  opacity: 1;
+  color: black;
+  font-size: .5em;
+  -webkit-transition: all 2s;
+}
+
+.container span.anima {
+  opacity: 1;
+  color: red;
+  font-size: inherit;
+}
+
+
+.container.pulse span:nth-child(2) {
+  transition-delay: .5s;
+}
+
+*/
 
 
 

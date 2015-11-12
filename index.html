@@ -20,7 +20,7 @@
 		</div>
 	</section>
 
-	<section class="inputs" ng-hide="!showView">
+	<section class="inputs" ng-show="showView">
 		<form name="myForm" novalidate ng-submit="submit()">
 			<div class="container">
 				<h2>Provide the following words:</h2>
@@ -70,11 +70,11 @@
 		</form>
 	</section>
 
-	<section class="paragraph" ng-hide="showView">
+	<section class="paragraph" ng-show="!showView">
 		<div class="container">
 			<p><span>{{madLibs.person}}</span> was a <span>{{madLibs.job}}</span> who loved technology. Although he/she loved parts of his/her job, he/she absolutely hated  <span>{{madLibs.tedious}}</span> and <span>{{madLibs.dirty}}</span>. So, <span>{{madLibs.person}}</span> met with his/her life mentor <span>{{madLibs.celebrity}}</span> who told him/her to learn <span>{{madLibs.useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{madLibs.useless}}</span> so he/she studied programming instead.<br><br>
 
-			What a great decision! With his/her new skills, <span>{{madLibs.person}}</span> built a(n) <span>{{madLibs.adjective}}</span> robot named <span>{{madLibs.obnoxious}}</span> that not only loved <span>{{madLibs.dirty}}</span> but did it <span>{{madLibs.number}}</span> times faster.</p> 
+			What a great decision! With his/her new skills, <span>{{madLibs.person}}</span> built a(n) <span>{{madLibs.adjective}}</span> robot named <span>{{madLibs.obnoxious}}</span> that not only loved <span>{{madLibs.dirty}}</span> but did it <span>{{madLibs.number | number}}</span> times faster.</p> 
 		</div>
 		<div class="btn-container">
 			<input type="button" value="Start Over" ng-click="reset()">
