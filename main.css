@@ -583,10 +583,10 @@ span {
 .inputs.ng-hide-remove,
 .paragraph.ng-hide-remove {
   opacity: 0;
-  -webkit-transition: 4s;
-  -moz-transition: 4s;
-  -o-transition: 4s;
-  transition: 4s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
 }
 
 .inputs.ng-hide-remove-active,
